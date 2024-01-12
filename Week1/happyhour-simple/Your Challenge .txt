@@ -1,0 +1,25 @@
+Your Challenge 
+You can learn a lot about JavaScript simply by taking some existing code, and BREAKING it. I encourage you to download the Happy Hour project that I made [DOWNLOAD HAPPY HOUR], and ask yourself, "What's going on here?" and "Why does this work?" 
+
+Here are 7 challenges that you need to do RIGHT NOW.
+These will help you learn JavaScript quicker than a fat baby sweats:
+
+1. If you wanted to see the results of randomNumber you could print that out by adding the following code after line 38:  
+
+document.write(randomNumber); 
+
+When you refresh what happens? It displays the numbers randomly 0 to n-1 numbers 
+
+2. Did you notice that sometimes a 0 pops up? What's that about!? Do a quick Google Search and you'll learn that arrays always start with 0 (not 1). I just gave you that answer. Send it in as your answer and impress the hell out of your One Month Mentor.  Yes, sometimes 0 pops up because arrays always start with 0. So the first element of array is 0 to last n-1 
+
+3. What happens when you replace bars[randomNumber] with bars[3]?only bars[3] -> One Month with all friends.
+
+4. What does bars.length do? Print it out to see. displays total number of bars elements for example in this its 6.
+
+5. What does Math.floor do? Remove it to find out. Math.floor rounds the number down to the nearest number if we remove it, It displays float or decimal point numbers.
+
+6. What is Math? No that's not a metaphysical question. Seriously, what is that word Math doing all around this code!? I challenge you to google it and come up with a good answer. Go deeper and print out some other Math methods. You can do this. And it all starts with one 6 letter word: GOOGLE. Math here is a function used to perform some mathematical operations or methods and there are many other Math methods used for example Math.sqrt(), Math.round(), Math.pow(), Math.min(), Math.max(),Math.ceil(), Math.abs(), Math.cbrt() etc.
+
+7. Add one friend to the list of friends.  Added but will not get in output because there are already 6 bars and 6 friends If we add one friend it does have one in bars so it will not display.
+
+Bonus challenge: Remove 3 friends from the list of friends. Why does this give you an "undefined" result when you occasionally refresh? Can you fix the problem? Yes, It shows undefined in friends name place because the friends array items or list elements are less when compared to the bars items. To fix the problem we should add friends and make friends number of items and bars number of items equal or  we can fix it by the code var randomNumberFriends = Math.floor(Math.random()*friends.length); and by adding and changing some part  variable friendname as var friendname = friends[randomNumberFriends]; 

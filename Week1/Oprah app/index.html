@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Oprah Likes You. And so do other people.</title>
+
+		<style>
+			
+			/* Basic CSS comment */	
+			body {
+				background: #BBB;
+				color: white;
+				width: 960px;
+				margin: 0 auto;
+			}
+
+			h1 {
+				font-size: 80px;
+				color: #333	;
+			}
+
+		</style>
+
+		<script>
+
+			// /* this is an event */
+
+			// alert("I'm annoying");
+
+			// /* this is used to print */
+
+			// document.write("Hello!");
+			// document.write("<h1>Hello Pavani!</h1>");
+
+			// /* this is variable */
+
+			// var username = "Pavani";
+			// var a = 1;
+			// document.write(username);
+			// document.write(username);
+			// document.write(username);
+
+			// /* this is concatenation */
+
+			// var firstname = "Pavani";
+			// var lastname = "Gajula";
+			// var fullname = firstname + " " + lastname;
+			// var a = 1;
+			// document.write("<h1>" + fullname + "</h1>");
+			// document.write("<h1>" + fullname + "</h1>");
+			// document.write("<h1>" + fullname + "</h1>");
+
+
+			// /* Datatypes usage */
+
+			// var firstname = "Pavani";
+			// var lastname = "Gajula";
+			// var fullname = firstname + " " + lastname;
+			// var a = 1;
+			// var b = 2;
+			// var c = a + b;
+			
+			// document.write("<h1>" + fullname + "</h1>");
+			// document.write("<h1>" + fullname + "</h1>");
+			// document.write("<h1>" + fullname + "</h1>");
+
+			// /* this is functions */
+
+			// var username = prompt("Hello, who are you?");
+
+			// document.write("<h1>Hello " + username + "!</h1>");
+
+			// /* Conditionals in js */
+
+			// var username = prompt("Hello, who are you?");
+
+			// if(username==="Pavani") {
+			// 	document.write("<h1>Hello " + username + " you won a car!</h1>");
+			// }
+			// else {
+			// 	document.write("<h1>Hello " + username + "!</h1>");
+
+			// /* usage of arrays */
+
+			// var username = prompt("Hello, who are you?");
+
+			// var car = new Array("BMW", "Saab", "Maserati");
+
+			// if(username==="Pavani") {
+			// 	document.write("<h1>Hello " + username + " you won a " + car[1] + "!</h1>");
+			// }
+			// else {
+			// 	document.write("<h1>Hello " + username + "!");
+			// }
+
+			// /* js Debugging using console.log */
+
+			// var username = prompt("Hello, who are you?");
+			// var car = new Array("BMW", "Saab", "Maserati");
+			// console.log(car);
+
+			// if(username==="Pavani") {
+			// 	document.write("<h1>Hello " + username + " you won a " + car[1] + "!</h1>");
+			// }
+			// else {
+			// 	document.write("<h1>Hello " + username + "!");
+			// }
+
+
+			var cars = [
+				"BMW",
+				"Maruti_Suzuki",
+				"TATA"
+			];
+
+			// Our List of carimages
+			var carimages = [
+				'<img src="images/BMW.jpeg" alt ="BMW">',
+				'<img src="images/Maruti_Suzuki.jpeg" alt="Maruti_Suzuki">',
+				'<img src="images/TATA.jpeg" alt="TATA">',
+			];
+
+
+
+			var username = prompt("Hello, Who are you?");
+			var randomNumber = Math.floor(Math.random()*cars.length);
+			var carsname = cars[randomNumber];
+			var carsimages = carimages[randomNumber];
+			
+
+			
+			if(username === "Pavani") {
+				document.write("<h1>Hello " + username + " Congratulations you won a " + carsname + "!</h1>" + carsimages);
+			 }
+			 else if(username === "Chris"){
+			 	document.write("<h1>Hello " + username + " Congratulations you won a " + carsname + "!</h1>" + carsimages);
+			 }
+			else {
+				document.write("<h1>Hello " + username + "!");
+			 }
+
+
+
+
+
+		</script>
+
+	</head>
+ 	
+	<body>
+		
+	</body>
+
+</html>

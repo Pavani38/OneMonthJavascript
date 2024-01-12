@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="Happy Hour App - How about a drink!?">
+		<meta name="keywords" content="happy hour, drink, beers">
+
+		<title>Happy Hour</title>
+		
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+
+		<script>
+		
+			// Our List of Bars
+			var bars = [
+				'Siggys',
+				'Blind Tiger',
+				'Zum Schneider',
+				'One Month',
+				'Home Sweet Home',
+				'Union Pool'
+			];
+
+			// Our List of Friends
+			var friends = [
+				'Chris',
+				'Lee',
+				'Casey',
+				"Pavani"
+			];
+
+			var randomNumber = Math.floor(Math.random()*bars.length);
+			var randomNumberFriends = Math.floor(Math.random()*friends.length);
+			
+			var barname = bars[randomNumber];
+			document.write(randomNumber); 
+			var friendname = friends[randomNumberFriends];
+
+			document.write("How about you go to <strong>" + barname + "</strong> with <strong>" + friendname + "</strong>?");	
+			console.log(bars.length)
+			document.write(bars.length);
+	
+		</script>
+	</head>
+	<body>
+		<!-- PAGE CONTENT WILL BE PRINTED HERE --> 
+	</body>
+</html>

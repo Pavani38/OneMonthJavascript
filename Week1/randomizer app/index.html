@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="randomizer-app">
+		<meta name="keywords" content="randomizer, playing, friends,tasks">
+
+		<title>Randomizer App</title>
+		
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+
+		<script>
+		
+			// Our List of Tasks
+			var tasks = [
+				'Sing a Song',
+				'Dance for a Song',
+				'Have to guess the movie',
+				'Perform an Act',
+				'Draw a Picture',
+				'Say a Dialog'
+			];
+
+			// Our List of Friends
+			var friends = [
+				'Manasa',
+				'Varshini',
+				'Amulya',
+				"Pavani",
+				"Ashwitha",
+				"Varshika"
+			];
+
+			var randomNumber = Math.floor(Math.random()*tasks.length);
+			// var randomNumberFriends = Math.floor(Math.random()*friends.length);
+			
+			var taskname = tasks[randomNumber];
+			document.write(randomNumber); 
+			var friendname = friends[randomNumber];
+
+			document.write("Playing with Friends <strong>" + friendname  + "</strong> got <strong>" + taskname + "</strong>?");	
+	
+		</script>
+	</head>
+	<body>
+		<!-- PAGE CONTENT WILL BE PRINTED HERE --> 
+	</body>
+</html>
